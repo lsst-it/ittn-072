@@ -1,7 +1,14 @@
-\documentclass[PMO,authoryear,toc]{lsstdoc}
+\documentclass[PMO,lsstdraft,authoryear,toc,]{lsstdoc}
 \input{meta}
 
 % Package imports go here.
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+\usepackage{parcolumns}
+\usepackage{lipsum}
+\usepackage{hyperref}
+\usepackage{caption}
 
 % Local commands go here.
 
@@ -49,6 +56,8 @@ This document was created as a guide to deploying a Kubernetes Cluster using our
 % ADD CONTENT HERE
 % You can also use the \input command to include several content files.
 
+\input{content.tex}
+
 \appendix
 % Include all the relevant bib files.
 % https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
@@ -61,9 +70,6 @@ This document was created as a guide to deploying a Kubernetes Cluster using our
 \input{acronyms.tex}
 % If you want glossary uncomment below -- comment out the two lines above
 %\printglossaries
-
-
-
 
 
 \end{document}
